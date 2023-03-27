@@ -1,0 +1,35 @@
+.todoItemContainer {
+  display: grid;
+  grid-template-columns: max-content 1fr 2rem;
+  align-items: center;
+  background-color: var(--gray-500);
+  border: 1px solid #333333;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  align-items: flex-start;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.todoItemContent {
+  margin: 0 1rem;
+}
+
+.todoItemCompleted {
+  margin: 0 1rem;
+  text-decoration-line: line-through;
+  color: var(--gray-300);
+}
+
+.deleteTodoBtn {
+  color: var(--gray-300);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 1rem;
+}
+
+.deleteTodoBtn:hover {
+  color: var(--red-500);
+}
